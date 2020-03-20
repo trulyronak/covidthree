@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+  text-align: center;  background-color: #292C33;
+
 }
 
 .App-logo {
@@ -44,7 +45,6 @@
 .item {
   width: 50%;
   min-height: 50vh;
-  background-color: #292C33;
   color: white;
 }
 textarea {

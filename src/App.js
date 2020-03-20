@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Calculator from "./components/Calculator"
 import Tweeter from "./components/Tweeter"
-
+import {Alert} from "react-bootstrap"
 
 class App extends React.Component {
   constructor(props) {
@@ -31,6 +31,9 @@ class App extends React.Component {
           <Calculator parent={this} />
           <Tweeter official={this.state.official} futureCases={this.state.futureCases} futureDeaths={this.state.futureDeaths} state={this.state.state} />
         </div>
+        <Alert variant="primary">
+        Note that this is intended as a rough estimate of the consequences of doing nothing, not an expert forecast. There are many reasons that our numbers could be incorrect, including the data itself -- many cases are going undetected right now, which means the total cases reported are too low and the death rate may be overestimated. Calculations are based on a five day doubling time and a 1.3% average population death rate for the US.
+      </Alert>
       </div>
     );
   }
