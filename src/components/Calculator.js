@@ -36,17 +36,31 @@ export default class Calculator extends React.Component {
     calculate(cases, deaths) {
         cases = cases || this.state.cases
         deaths = deaths || this.state.deaths
+
+        let futureCases = 0, futureDeaths = 0;
+
+        if (cases != 0 && deaths == 0) {
+            futureCases = cases * Math.pow(2, (21/5));
+            futureDeaths = cases * Math.pow(2, (21/5)) * 0.013;
+         } else if (cases == 0 && deaths == 0) {
+            futureCases = 0
+            futureDeaths = 0
+         } else {
+            futureCases = cases * Math.pow(2, (21/5))
+            futureDeaths = cases * Math.pow(2, (21/5))*(deaths/cases)
+         }
+
         this.props.parent.setState({
-            futureCases: this.roundToNearestTenth(cases * Math.pow(2, (21/5)))
+            futureCases: this.roundToNearestTenth(futureCases)
         })
 
         this.props.parent.setState({
-            futureDeaths: this.roundToNearestTenth(deaths * Math.pow(2, (21/5)))
+            futureDeaths: this.roundToNearestTenth(futureDeaths)
         })
     }
 
     roundToNearestTenth(n) {
-        return Math.ceil((n+1)/10)*10;
+        return Math.round(n/10)*10;
     }
 
     handleStateSelect(e) {
