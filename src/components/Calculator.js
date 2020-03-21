@@ -7,12 +7,16 @@ export default class Calculator extends React.Component {
         this.state = {
             cases: 17038,
             deaths: 220,
-            statesData: []
+            statesData: [],
         }
         this.calculate();
         this.handleCasesChange = this.handleCasesChange.bind(this);
         this.handleDeathsChange = this.handleDeathsChange.bind(this);
         this.handleStateSelect = this.handleStateSelect.bind(this);
+        this.handleOfficialChange = this.handleOfficialChange.bind(this);
+        this.handleLocationChange = this.handleLocationChange.bind(this);
+        this.state.official = this.props.parent.state.official
+        this.state.state = this.props.parent.state.state
     }
 
     handleCasesChange(e) {
@@ -49,13 +53,31 @@ export default class Calculator extends React.Component {
         let state = this.props.statesData[e.target.value]
         this.setState({
             cases: state.Cases,
-            deaths: state.Deaths
+            deaths: state.Deaths,
         })
         this.props.parent.setState({
             state: state.State,
             official: state["Twitter Handle"]
         })
         this.calculate(state.Cases, state.Deaths);
+    }
+
+    handleOfficialChange(e) {
+        this.props.parent.setState({
+            official: e.target.value
+        })
+        this.setState({
+            official: e.target.value
+        })
+    }
+
+    handleLocationChange(e) {
+        this.props.parent.setState({
+            state: e.target.value
+        })
+        this.setState({
+            state: e.target.value
+        })
     }
 
     render() {
@@ -80,6 +102,18 @@ export default class Calculator extends React.Component {
                 Deaths Right Now  <br/>
                 <input type="number" name="name" value={this.state.deaths} onChange={this.handleDeathsChange} />
             </label>
+<br/>
+            <label>
+                Who to Tag  <br/>
+                <input type="text" name="name" value={this.state.official} onChange={this.handleOfficialChange} />
+            </label>
+<br/>
+            <label>
+                Location  <br/>
+                <input type="text" name="name" value={this.state.state} onChange={this.handleLocationChange} />
+            </label>
+
+            
             <br/>
                 </form>
 

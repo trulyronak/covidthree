@@ -86,7 +86,7 @@ class App extends React.Component {
         Note that this is intended as a rough estimate of the consequences of doing nothing, not an expert forecast. There are many reasons that our numbers could be incorrect, including the data itself -- many cases are going undetected right now, which means the total cases reported are too low and the death rate may be overestimated. Calculations are based on a five day doubling time and a 1.3% average population death rate for the US.
       </Alert>
       <Alert variant="dark" className="footer">
-        Made with ❤️ by <a href="https://twitter.com/realronakshah">Ronak Shah</a>, <a href="https://twitter.com/diddykrish">Aditya Krishnaswamy</a>, and <a href="https://twitter.com/Malar0ne">Mallory Harris</a>.
+      Created with ❤️ by <a href="https://twitter.com/realronakshah">Ronak Shah</a> @ UCSD. Data insights from <a href="https://twitter.com/diddykrish">Aditya Krishnaswamy</a> and <a href="https://twitter.com/Malar0ne">Mallory Harris</a> from UGA.
       </Alert>
       
       </div>
