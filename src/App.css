@@ -1,6 +1,6 @@
 .App {
   text-align: center;  background-color: #292C33;
-
+  color: white;
 }
 
 .App-logo {
@@ -38,7 +38,7 @@
   }
 }
 
-.container {
+/* .container {
   display: flex;
 }
 
@@ -46,7 +46,7 @@
   width: 50%;
   min-height: 50vh;
   color: white;
-}
+} */
 textarea {
   height: 100%;
   width: 100%;
@@ -54,4 +54,8 @@ textarea {
 }
 a {
   color: white;
+}
+
+.footer a {
+  color: blue;
 }
