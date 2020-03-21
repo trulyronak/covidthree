@@ -60,10 +60,11 @@ export default class Calculator extends React.Component {
 
     render() {
         return <div className="item">
-            <h3>Put Your Information</h3>
+            <h3>Plug in your Area’s Data</h3>
+            {/* <p>Choose a State for Prefilled Data</p> */}
             <form>
                 <label>
-                    Select a State for PreFilled Data<br/>
+                   State:<br/>
                 <select id="state" onChange={this.handleStateSelect}>
                     {this.props.statesData.map((state, index) => {
                         return <option value={index} key={index}>{state["State"]}</option>
@@ -72,15 +73,20 @@ export default class Calculator extends React.Component {
                 </label>
                 <br/>
             <label>
-                Cases Right Now:
+                Cases Right Now  <br/>
                 <input type="number" name="name" value={this.state.cases} onChange={this.handleCasesChange} />
             </label><br/>
             <label>
-                Deaths Right Now:
+                Deaths Right Now  <br/>
                 <input type="number" name="name" value={this.state.deaths} onChange={this.handleDeathsChange} />
             </label>
             <br/>
                 </form>
+
+                In three weeks...
+                <br></br>
+                {this.props.parent.state.futureCases} Cases<br/>
+                {this.props.parent.state.futureDeaths} Deaths
         </div>
     }
 }

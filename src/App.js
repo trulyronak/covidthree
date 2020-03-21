@@ -11,8 +11,8 @@ class App extends React.Component {
     super(props)
     this.state = {}
     this.state.text = ""
-    this.state.futureDeaths = 0
-    this.state.futureCases = 0
+    this.state.futureDeaths = 313150
+    this.state.futureCases = 4050
     this.state.state = "the United States"
     this.state.official = "@realDonaldTrump"
     this.state.statesData = []
@@ -66,12 +66,12 @@ class App extends React.Component {
           <h1>
             COVID-19 - <code>3 Weeks From Now</code> 
           </h1>
-          <h3>Enter in your information below to see what might happen</h3>
         </header>
         Experts say that it could take up to the three weeks before we see the effects of our actions in reducing hospitalizations and deaths. We're worried that our elected officials aren't thinking ahead.
 <br/>
       <Button variant="success" href="https://www.imperial.ac.uk/media/imperial-college/medicine/sph/ide/gida-fellowships/Imperial-College-COVID19-NPI-modelling-16-03-2020.pdf">Imperial College Paper</Button>
-      <Button variant="warning" href="https://docs.google.com/spreadsheets/d/1FmDsmAq3fX9K2BAsfh6EibpnRxhV-DNvMSlX_fiLHOc/">Data Sheet</Button>
+      <Button variant="warning" href="https://docs.google.com/spreadsheets/d/1FmDsmAq3fX9K2BAsfh6EibpnRxhV-DNvMSlX_fiLHOc/">Current Data</Button>
+      <br/>
         <Container>
           <Row>
           <Col xs={12} md={5}>

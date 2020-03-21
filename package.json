@@ -1,5 +1,5 @@
 {
-  "name": "covidthree",
+  "name": "test",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,12 +7,11 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "bootstrap": "^4.4.1",
-    "csvtojson": "^2.0.10",
     "papaparse": "^5.1.1",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.0-beta.17",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.0"
+    "react-scripts": "3.4.1"
   },
   "scripts": {
     "start": "react-scripts start",
