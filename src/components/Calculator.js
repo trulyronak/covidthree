@@ -60,6 +60,7 @@ export default class Calculator extends React.Component {
 
     render() {
         return <div className="item">
+            <h3>Put Your Information</h3>
             <form>
                 <label>
                     Select a State for PreFilled Data<br/>

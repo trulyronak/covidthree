@@ -31,7 +31,8 @@ export default class Tweeter extends React.Component {
         console.log(this.props)
         let text = this.makeText()
         return <div className="item">
-            
+                        <h3>Take Action</h3>
+
             <Button variant="primary" target="_blank" onClick={() => {
                 let href = `https://twitter.com/intent/tweet?hashtags=FlattenTheCurve%20%23ThreeWeeksBehind&text=${text}`
                 window.open(href, "_blank")

@@ -70,7 +70,7 @@ class App extends React.Component {
         </header>
         Experts say that it could take up to the three weeks before we see the effects of our actions in reducing hospitalizations and deaths. We're worried that our elected officials aren't thinking ahead.
 <br/>
-      <Button variant="success" href="https://www.imperial.ac.uk/media/imperial-college/medicine/sph/ide/gida-fellowships/Imperial-College-COVID19-NPI-modelling-16-03-2020.pdf">Source</Button>
+      <Button variant="success" href="https://www.imperial.ac.uk/media/imperial-college/medicine/sph/ide/gida-fellowships/Imperial-College-COVID19-NPI-modelling-16-03-2020.pdf">Imperial College Paper</Button>
       <Button variant="warning" href="https://docs.google.com/spreadsheets/d/1FmDsmAq3fX9K2BAsfh6EibpnRxhV-DNvMSlX_fiLHOc/">Data Sheet</Button>
         <Container>
           <Row>
