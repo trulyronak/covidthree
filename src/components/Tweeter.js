@@ -24,7 +24,7 @@ export default class Tweeter extends React.Component {
     
     makeText() {
         // return `.${this.props.official} three weeks from now, ${this.props.state} could have:\n\n${this.props.futureCases} of \#COVID19\n${this.props.futureDeaths} deaths\n\nWill You Be Ready to Act Then?\n\n#FlattenTheCurve\#ThreeWeeks`
-        return `.${this.props.official} three weeks from now, we could have ${this.props.futureCases} cases and ${this.props.futureDeaths} deaths in ${this.props.state}. Will you be ready to act then? We need to take action TODAY not wait till 3 weeks from now, when it will be too late. See how this was calculated at ${this.getWebsiteURL()} #FlattenTheCurve #ThreeWeeksBehind `
+        return `.${this.props.official} three weeks from now, we could have ${this.props.futureCases} cases and ${this.props.futureDeaths} deaths in ${this.props.state}. Will you be ready to act then? We need to take action TODAY - not wait till 3 weeks from now. See how this was calculated at ${this.getWebsiteURL()} #FlattenTheCurve #ThreeWeeksBehind `
     }
     render() {
         console.log('tweet')
